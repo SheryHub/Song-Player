@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Song Player</h1>
+
+    <!-- User Registration Form -->
+    <form id="registerForm">
+        <h2>Register</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- User Login Form -->
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" name="loginUsername" required>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Form to add a new artist -->
+    <form id="addArtistForm">
+        <h2>Add New Artist</h2>
+        <label for="artistName">Artist Name:</label>
+        <input type="text" id="artistName" name="artistName" required>
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required>
+        <label for="debutYear">Debut Year:</label>
+        <input type="number" id="debutYear" name="debutYear" required>
+        <button type="submit">Add Artist</button>
+    </form>
+
+    <div id="artistList">
+        <!-- Artist list will be displayed here -->
+    </div>
+
+    <!-- Form to add a new album -->
+    <form id="addAlbumForm">
+        <h2>Add New Album</h2>
+        <label for="albumName">Album Name:</label>
+        <input type="text" id="albumName" name="albumName" required>
+        <label for="releaseDate">Release Date:</label>
+        <input type="date" id="releaseDate" name="releaseDate" required>
+        <label for="artistId">Artist ID:</label>
+        <input type="number" id="artistId" name="artistId" required>
+        <button type="submit">Add Album</button>
+    </form>
+
+    <div id="albumList">
+        <!-- Album list will be displayed here -->
+    </div>
+
+    <!-- Form to add a new song -->
+    <form id="addSongForm">
+        <h2>Add New Song</h2>
+        <label for="songName">Song Name:</label>
+        <input type="text" id="songName" name="songName" required>
+        <label for="duration">Duration (seconds):</label>
+        <input type="number" id="duration" name="duration" required>
+        <label for="mp3File">MP3 File:</label>
+        <input type="text" id="mp3File" name="mp3File" >
+        <label for="albumId">Album ID:</label>
+        <input type="number" id="albumId" name="albumId" required>
+        <label for="artistId">Artist ID:</label>
+        <input type="number" id="artistId" name="artistId" required>
+        <button type="submit">Add Song</button>
+    </form>
+
+    <div id="songList">
+        <!-- Song list will be displayed here -->
+    </div>
+
+    <!-- Form to create a new playlist -->
+    <form id="createPlaylistForm">
+        <h2>Create New Playlist</h2>
+        <label for="playlistName">Playlist Name:</label>
+        <input type="text" id="playlistName" name="playlistName" required>
+        <label for="userId">User ID:</label>
+        <input type="number" id="userId" name="userId" required>
+        <button type="submit">Create Playlist</button>
+    </form>
+
+    <div id="playlistList">
+        <!-- Playlist list will be displayed here -->
+    </div>
+
+    <!-- Form to subscribe to a plan -->
+    <form id="subscribeForm">
+        <h2>Subscribe to a Plan</h2>
+        <label for="userIdSub">User ID:</label>
+        <input type="number" id="userIdSub" name="userIdSub" required>
+        <label for="planName">Plan Name:</label>
+        <input type="text" id="planName" name="planName" required>
+        <button type="submit">Subscribe</button>
+    </form>
+
+    <div id="subscriptionList">
+        <!-- Subscription list will be displayed here -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
